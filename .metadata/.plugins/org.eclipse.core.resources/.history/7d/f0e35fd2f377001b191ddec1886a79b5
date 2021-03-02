@@ -1,0 +1,11 @@
+package prac01;
+
+public class Main {
+
+	public static void main(String[] args) {
+		//main 이라는 특벼란 메소드 생성.
+		//메소드란 프로그램의 기능을 담당하는 부분.
+		System.out.println();
+	}
+	
+}

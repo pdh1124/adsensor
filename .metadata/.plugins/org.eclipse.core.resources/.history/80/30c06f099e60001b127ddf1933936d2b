@@ -1,0 +1,9 @@
+
+public class data {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		char var1 = '홍'; //char는 ''를 만들어 줘야함 문자열 영문이나 한글 한글자만 가능함
+	}
+
+}

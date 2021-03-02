@@ -1,0 +1,12 @@
+
+public class data {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		char var1 = '홍'; //char는 ''를 만들어 줘야함 문자열 영문이나 한글 한글자만 가능함, char는 데이터 절약하기 위해서 씀
+		String var2 = "홍드로이드"; //String은 ""로 해줘야 하며 char를 제외한 여러문자를 이용할때 보통 다 String으로 만드는 편이고
+		byte var3 = -7;//말그대로 1byte를 사용해서 -128 ~ +127까지만 가능한 숫자만 입력 가능 ''나 ""를 쓰지 않음
+		short var4 = -32768;//2byte를 사용하고 -32768 ~ + 32767까지 입력이 가능한 숫자
+	}
+
+}

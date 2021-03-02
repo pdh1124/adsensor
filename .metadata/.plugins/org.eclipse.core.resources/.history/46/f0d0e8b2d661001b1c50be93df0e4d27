@@ -1,0 +1,14 @@
+
+public class whileExam {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i = 0;
+		
+		while(i < 10) { //조건이 부합되는 동안은 계속 안의 내용문을 실행해주는 함수 
+			System.out.println(i+1);
+			i++;
+		}
+	}
+
+}
