@@ -7,19 +7,19 @@ public class BedMain {
 		Bed myBedRoom = new Bed();
 		
 		myBedRoom.setPillow(2);
-		System.out.println("º£°³ °¹¼ö : " + myBedRoom.getPillow());
+		System.out.println("ë² ê°œ ê°¯ìˆ˜ : " + myBedRoom.getPillow());
 		
 		myBedRoom.setElectricPad(true);
-		System.out.println("Àü±â ÀåÆÇ À¯¹« : " + myBedRoom.getElectricPad());
+		System.out.println("ì „ê¸° ì¥íŒ ìœ ë¬´ : " + myBedRoom.getElectricPad());
 		
-		myBedRoom.setMattress("¶óÅØ½º");
-		System.out.println("¸ÅÆ®¸¯½º Á¾·ù : " + myBedRoom.getMattress());
+		myBedRoom.setMattress("ë¼í…ìŠ¤");
+		System.out.println("ë§¤íŠ¸ë¦­ìŠ¤ ì¢…ë¥˜ : " + myBedRoom.getMattress());
 		
 		myBedRoom.setTowel(false);
-		System.out.println("¼ö°Ç À¯¹« : " + myBedRoom.getTowel());
+		System.out.println("ìˆ˜ê±´ ìœ ë¬´ : " + myBedRoom.getTowel());
 		
-		myBedRoom.setBlanket("±Ø¼¼»ç");
-		System.out.println("ÀÌºÒ Á¾·ù : " + myBedRoom.getBlanket());
+		myBedRoom.setBlanket("ê·¹ì„¸ì‚¬");
+		System.out.println("ì´ë¶ˆ ì¢…ë¥˜ : " + myBedRoom.getBlanket());
 		
 
 	}

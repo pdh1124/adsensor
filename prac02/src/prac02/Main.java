@@ -5,11 +5,11 @@ import java.util.Arrays;
 public class Main {
 
 	public static void main(String[] args) {
-		//º¯¼ö : º¯ÇÏ´Â ¼ö
-		String s; //String : ÂüÁ¶ ÀÚ·áÇü
-		//º¯¼ö¸íÀº s
+		//ë³€ìˆ˜ : ë³€í•˜ëŠ” ìˆ˜
+		String s; //String : ì°¸ì¡° ìë£Œí˜•
+		//ë³€ìˆ˜ëª…ì€ s
 		s = "grape";
-		//º¯¼ö °ª
+		//ë³€ìˆ˜ ê°’
 		System.out.println("banana");
 		System.out.println(s);
 		

@@ -6,24 +6,24 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-		Car bomCar = new Car(); //ÂüÁ¶Çü º¯¼ö¸¦ »ı¼ºÇß´Ù. (ÂüÁ¶ Å¸ÀÔ)
-		// Ä« ¶ó´Â Å¬·¡½º¸¦ ÀÌ¿ëÇÏ¿©, »õ·Î¿î Á¤º¸¸¦ ¸Ş¸ğ¸®¿¡ µî·Ï(°´Ã¼ »ı¼º)ÇÏ°í,
-		// µî·ÏµÈ °´Ã¼¸¦ Car¶ó´Â ÀÚ·áÇüÀÇ º¯¼ö bomCar¿¡ ÀúÀåÇÏ¶ó.
-		// int a = 10; (±âº» Å¸ÀÔ)
+		Car bomCar = new Car(); //ì°¸ì¡°í˜• ë³€ìˆ˜ë¥¼ ìƒì„±í–ˆë‹¤. (ì°¸ì¡° íƒ€ì…)
+		// ì¹´ ë¼ëŠ” í´ë˜ìŠ¤ë¥¼ ì´ìš©í•˜ì—¬, ìƒˆë¡œìš´ ì •ë³´ë¥¼ ë©”ëª¨ë¦¬ì— ë“±ë¡(ê°ì²´ ìƒì„±)í•˜ê³ ,
+		// ë“±ë¡ëœ ê°ì²´ë¥¼ Carë¼ëŠ” ìë£Œí˜•ì˜ ë³€ìˆ˜ bomCarì— ì €ì¥í•˜ë¼.
+		// int a = 10; (ê¸°ë³¸ íƒ€ì…)
 		
 		bomCar.setSpeed(10);
-		System.out.println("bomCarÀÇ ½ºÇÇµå : " + bomCar.getSpeed());
+		System.out.println("bomCarì˜ ìŠ¤í”¼ë“œ : " + bomCar.getSpeed());
+		bomCar.setColor("red");
+		System.out.println("bomCarì˜ ìƒ‰ : " + bomCar.getColor());
 		
 		
 		Car butiCar = new Car();
 		butiCar.setSpeed(50);
 		butiCar.setColor("red");
-		System.out.println("butiCarÀÇ ½ºÇÇµå : " + butiCar.getSpeed());
-		System.out.println("butiCarÀÇ ÄÃ·¯ : " + butiCar.getColor());
+		System.out.println("butiCarì˜ ìŠ¤í”¼ë“œ : " + butiCar.getSpeed());
+		System.out.println("butiCarì˜ ì»¬ëŸ¬ : " + butiCar.getColor());
 		
-		int x = 2;
-		System.out.println(<<x);
-		
+				
 		byte num2 = 10;
 		byte num3 = -10;
 		System.out.println(~num2);
@@ -31,10 +31,10 @@ public class Main {
 		
 		byte num = 10;
 		System.out.println(++num); //11, num = num + 1
-		System.out.println(num++); //11, num = num, ±× ´ÙÀ½ ¹ø¿¡ 1Áõ°¡
+		System.out.println(num++); //11, num = num, ê·¸ ë‹¤ìŒ ë²ˆì— 1ì¦ê°€
 		System.out.println(num);
 		System.out.println(--num); //11, num = num - 1
-		System.out.println(num--); //11, num = num, ±× ´ÙÀ½ ¹ø¿¡ 1°¨¼Ò
+		System.out.println(num--); //11, num = num, ê·¸ ë‹¤ìŒ ë²ˆì— 1ê°ì†Œ
 		System.out.println(num);
 		
 		
@@ -52,19 +52,19 @@ public class Main {
 		int d = 9;
 		
 		if (d == 10) {
-			System.out.println("a´Â 10 ÀÌ´Ù.");
+			System.out.println("aëŠ” 10 ì´ë‹¤.");
 			
 		}else {
-			System.out.println("a´Â 10ÀÌ ¾Æ´Ï´Ù.");
+			System.out.println("aëŠ” 10ì´ ì•„ë‹ˆë‹¤.");
 		} // end_if
 		
-		//if : ¸¸ÀÏ ~ ÇÑ´Ù¸é
+		//if : ë§Œì¼ ~ í•œë‹¤ë©´
 		
-		//if(Á¶°Ç) {
-		//	ÂüÀÏ¶§ ¼öÇàÇÒ ¹®Àå.	
+		//if(ì¡°ê±´) {
+		//	ì°¸ì¼ë•Œ ìˆ˜í–‰í•  ë¬¸ì¥.	
 		//}
 		//else {
-		//	°ÅÁşÀÏ¶§ ¼öÇàÇÒ ¹®Àå.
+		//	ê±°ì§“ì¼ë•Œ ìˆ˜í–‰í•  ë¬¸ì¥.
 		//}
 		
 		
@@ -72,17 +72,17 @@ public class Main {
 		int e = sic.nextInt();
 		
 		if(e%2 == 0) {
-			System.out.println(e +"´Â Â¦¼öÀÌ´Ù.");
+			System.out.println(e +"ëŠ” ì§ìˆ˜ì´ë‹¤.");
 		} else {
-			System.out.println(e +"´Â È¦¼öÀÌ´Ù.");
+			System.out.println(e +"ëŠ” í™€ìˆ˜ì´ë‹¤.");
 		}
 		
 		double f = sic.nextDouble();
 		
 		if(f%2 == 0) {
-			System.out.println(f + "´Â Â¦¼öÀÌ´Ù.");
+			System.out.println(f + "ëŠ” ì§ìˆ˜ì´ë‹¤.");
 		} else {
-			System.out.println(f + "´Â È¦¼öÀÌ´Ù.");
+			System.out.println(f + "ëŠ” í™€ìˆ˜ì´ë‹¤.");
 		}
 		
 	}

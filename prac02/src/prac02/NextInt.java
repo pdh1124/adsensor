@@ -1,18 +1,22 @@
 package prac02;
 
-import java.util.Scanner;
+	import java.util.Scanner;
 
 public class NextInt {
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in);
-		//È­¸é¿¡¼­ °ªÀ» ÀÔ·Â ¹Ş°Ú´Ù.
-				
-		int a = sc.nextInt(); //1¹øÂ° ÀÔ·Â°ªÀ» int ·Î ÀúÀå.
-		int b = sc.nextInt(); //2¹øÂ° ÀÔ·Â°ªÀ» int ·Î ÀúÀå.
-		System.out.println(a + b);
+		Scanner sc = new Scanner(System.in); // í™”ë©´ì—ì„œ ê°’ì„ ì…ë ¥ ë°›ê² ë‹¤.
+						
+		int A = sc.nextInt(); // 1ë²ˆì§¸ ì…ë ¥ê°’ì„ int ë¡œ ì €ì¥.
+		int B = sc.nextInt(); // 2ë²ˆì§¸ ì…ë ¥ê°’ì„ int ë¡œ ì €ì¥.
+		System.out.println(A+B);
+		System.out.println(A-B);
+		System.out.println(A*B);
+		System.out.println((double)A / B);
+		System.out.println(A%B);
+		//ì‹¤ìˆ˜ ë‚˜ëˆ„ê¸° ì •ìˆ˜ëŠ” ì‹¤ìˆ˜ì´ë‹¤.
 		
-		sc.close(); //¿î¿µÃ¼Á¦¿¡¼­ ÀÔ·Â¿¡ ´ëÇÑ ÀÚ¿øÀ» ´Ù ›§À¸´Ï ¹İ³³.
+		sc.close();// ìš´ì˜ì²´ì œì—ì„œ ì…ë ¥ì— ëŒ€í•œ ìì›ì„ ë‹¤ ì¼ìœ¼ë‹ˆ ë°˜ë‚©.
 		
 	}
 }

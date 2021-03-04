@@ -1,7 +1,7 @@
 package prac03;
 
 public class Car {
-	//Å¬·¡½ºÀÇ ¸â¹ö ÇÊµå.(Å¬·¡½º¿¡¼­ °ªÀ» ÀúÀåÇÏ°í ÀÖ´Â º¯¼ö)
+	//í´ëž˜ìŠ¤ì˜ ë©¤ë²„ í•„ë“œ.(í´ëž˜ìŠ¤ì—ì„œ ê°’ì„ ì €ìž¥í•˜ê³  ìžˆëŠ” ë³€ìˆ˜)
 	int speed;
 	int distance;
 	String color;
@@ -9,24 +9,24 @@ public class Car {
 	int energy;
 	
 	
-	//¼Óµµ ¼³Á¤(set) ¸Þ¼Òµå
+	//ì†ë„ ì„¤ì •(set) ë©”ì†Œë“œ
 	public void setSpeed(int speed2) {
 		this.speed = speed2;
-		// ¸Å°³º¯¼ö·Î Àü´Þ¹ÞÀº speed2¸¦ car °´Ã¼ÀÇ speed Á¤º¸¿¡ µî·Ï.
-		// void : ¸®ÅÏ °ªÀÌ ¾øÀ½.
-		// this : °´Ã¼ ÀÚ½ÅÀ» °¡¸£Å´
+		// ë§¤ê°œë³€ìˆ˜ë¡œ ì „ë‹¬ë°›ì€ speed2ë¥¼ car ê°ì²´ì˜ speed ì •ë³´ì— ë“±ë¡.
+		// void : ë¦¬í„´ ê°’ì´ ì—†ìŒ.
+		// this : ê°ì²´ ìžì‹ ì„ ê°€ë¥´í‚´
 	}
 	
-	//¼Óµµ°ª ÀÐ¾î¿À±â(get)
+	//ì†ë„ê°’ ì½ì–´ì˜¤ê¸°(get)
 	public int getSpeed() {
 		return speed;
-		//°´Ã¼ÀÇ ÀúÀåµÈ speed¸¦ ÀÐ¾î¿Í¼­ È£ÃâÇÑ °÷¿¡ int °ª Ç¥½Ã.
+		//ê°ì²´ì˜ ì €ìž¥ëœ speedë¥¼ ì½ì–´ì™€ì„œ í˜¸ì¶œí•œ ê³³ì— int ê°’ í‘œì‹œ.
 	}
 	
-	//Ä«¸á(³«Å¸ È¤) Ç¥±â¹ý. ¹®Àå°ú ¹®ÀåÀÌ ¿¬°áµÉ¶§ Ã¹±ÛÀÚ¸¦ ´ë¹®ÀÚ·Î ¾´´Ù. (getSpeedIsNow)
+	//ì¹´ë©œ(ë‚™íƒ€ í˜¹) í‘œê¸°ë²•. ë¬¸ìž¥ê³¼ ë¬¸ìž¥ì´ ì—°ê²°ë ë•Œ ì²«ê¸€ìžë¥¼ ëŒ€ë¬¸ìžë¡œ ì“´ë‹¤. (getSpeedIsNow)
 	
 	
-	// ÄÚµåÀÇ ºó °ø°£¿¡¼­ ¸¶¿ì½º ¿ìÅ¬¸¯ ÇÏ°í, source >> generate getter and setter
+	// ì½”ë“œì˜ ë¹ˆ ê³µê°„ì—ì„œ ë§ˆìš°ìŠ¤ ìš°í´ë¦­ í•˜ê³ , source >> generate getter and setter
 	public void setColor(String color2) {
 		this.color = color2;
 	}
