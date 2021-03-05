@@ -8,7 +8,7 @@ public class BackFor11 {
 		Scanner scan = new Scanner(System.in);
 		int N = scan.nextInt();
 		int X = scan.nextInt();
-		
+
 		scan.close();
 	}
 
