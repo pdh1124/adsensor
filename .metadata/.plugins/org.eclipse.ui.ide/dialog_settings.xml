@@ -12,8 +12,8 @@
 	<section name="NewWizardAction">
 	</section>
 	<section name="ChooseWorkspaceDialogSettings">
-		<item key="DIALOG_X_ORIGIN" value="659"/>
-		<item key="DIALOG_Y_ORIGIN" value="341"/>
+		<item key="DIALOG_X_ORIGIN" value="532"/>
+		<item key="DIALOG_Y_ORIGIN" value="349"/>
 	</section>
 	<section name="WORKBENCH_SETTINGS">
 		<list key="ENABLED_TRANSFERS">
