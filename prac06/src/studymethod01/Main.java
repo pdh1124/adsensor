@@ -35,7 +35,7 @@ public class Main {
 	public static int division(int num7, int num8) {
 		return num7 / num8;
 	}
-	
+
 	public static int Remainder(int num9, int num10) {
 		return num9 % num10;
 	}

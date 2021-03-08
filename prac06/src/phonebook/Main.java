@@ -60,7 +60,8 @@ class PhoneBook {
 public class Main {
 
 	public static void main(String[] args) {
-
+		
+		/*
 		PhoneBook p1 = new PhoneBook("홍길동", "010-0000-3333");
 		// 개발자가 생성자를 구현하면 컴파일러는 디폴트 생성자를
 		// 자동으로 만들지 않음.
@@ -90,6 +91,23 @@ public class Main {
 		Kim.setBlood("B형");
 		Kim.setAddress("서울");
 		System.out.println(Kim.toString() + "\n");
+		*/
+		
+		PhoneBook[] arr = new PhoneBook[3];
+		
+		PhoneBook p10 = new PhoneBook("김하나", "010-0000-0001");
+		PhoneBook p11 = new PhoneBook("박첨치", "010-0000-0002");
+		PhoneBook p12 = new PhoneBook("김현태", "010-0000-0003");
+		arr[0] = p10;
+		arr[1] = p11;
+		arr[2] = p12;
+		
+		System.out.println("--------------------------------");
+		
+		for(int i=0;i<arr.length;i++) {
+			System.out.println(arr[i]);		
+			
+		}
 	} // end of main
 
 } // end of class
