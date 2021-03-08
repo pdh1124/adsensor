@@ -32,9 +32,9 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\pdw32\Desktop\main.zip"/>
 			<item value="C:\Users\pdw32\Desktop\main3.zip"/>
 			<item value="C:\Users\pdw32\Desktop\main2.zip"/>
-			<item value="C:\Users\pdw32\Desktop\main.zip"/>
 			<item value="C:\Users\pdw32\Desktop\123.zip"/>
 		</list>
 	</section>

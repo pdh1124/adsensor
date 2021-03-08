@@ -15,18 +15,18 @@ public class main {
 			num++;
 		} while (num <= 9);
 
-		Scanner sc = new Scanner(System.in);
-		int b, c;
-
-		do {
-			b = sc.nextInt();
-			c = sc.nextInt();
-			if (b == 0 && c == 0)
-				break;
-			System.out.println(b + c);
-		} while (true);
-
-		sc.close();
+//		Scanner sc = new Scanner(System.in);
+//		int b, c;
+//
+//		do {
+//			b = sc.nextInt();
+//			c = sc.nextInt();
+//			if (b == 0 && c == 0)
+//				break;
+//			System.out.println(b + c);
+//		} while (true);
+//
+//		sc.close();
 	}
 
 }
