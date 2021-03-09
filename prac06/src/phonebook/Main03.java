@@ -23,31 +23,30 @@ class PhoneNumb {
 	}
 
 	public void showIn() {
-		System.out.println("name: "+name);
-		System.out.println("phone: "+phoneNum);
-		if(birth!=null)
-			System.out.println("birth: "+birth);
-		}
+		System.out.println("name: " + name);
+		System.out.println("phone: " + phoneNum);
+		if (birth != null)
+			System.out.println("birth: " + birth);
+	}
 
 }
 
-class PhoneBookManager    //제어 클래스
+class PhoneBookManager // 제어 클래스
 {
-	final int MAX=100;
-	PhoneInfo[] phoneList=new PhoneInfo[MAX];
-	int cnt=0;
+	final int MAX = 100;
+	PhoneInfo[] phoneList = new PhoneInfo[MAX];
+	int cnt = 0;
 
-	void readData()
-	{ 
-   		cnt++;
+	void readData() {
+		cnt++;
 	}
-	void searchData()
-	{
-		
+
+	void searchData() {
+
 	}
-	void deleteData()
-	{
-   		cnt--;
+
+	void deleteData() {
+		cnt--;
 	}
 }
 
@@ -72,12 +71,12 @@ public class Main03 {
 				System.out.println("선택:" + a);
 				p1.showIn();
 				a = scan.nextInt();
-				
+
 			} else if (a == 2) {
-				
-				a = scan.nextInt();			
+
+				a = scan.nextInt();
 			} else if (a == 3) {
-				
+
 				a = scan.nextInt();
 			} else if (a == 4) {
 				System.out.println("선택:" + a);
@@ -90,9 +89,6 @@ public class Main03 {
 		}
 	}
 
-	private static Object x(boolean b) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 
 }

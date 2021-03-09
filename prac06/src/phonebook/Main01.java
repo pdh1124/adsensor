@@ -24,8 +24,8 @@ class PhoneInfo {
 		this.birth = birth;
 	}
 
-	public String showPhoneInfo() {
-		return "이름 : " + name + ", 연락처 : " + phoneNum + ", 생일 : " + birth;
+	public void showPhoneInfo() {
+		System.out.println("이름 : " + name + ", 연락처 : " + phoneNum + ", 생일 : " + birth);
 	}
 
 }
@@ -36,8 +36,8 @@ public class Main01 {
 		PhoneInfo pInfo1 = new PhoneInfo("홍길동", "111-2222", "90/08/30");
 		PhoneInfo pInfo2 = new PhoneInfo("이순신", "222-3333");
 
-		System.out.println(pInfo1.showPhoneInfo());
-		System.out.println(pInfo2.showPhoneInfo());
+		pInfo1.showPhoneInfo();
+		pInfo2.showPhoneInfo();
 
 	}
 

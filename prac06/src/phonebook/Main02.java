@@ -22,10 +22,10 @@ class PhoneNumber {
 		this.birth = birth;
 	}
 
-	public String showInfo() {
-		return "name: " + name + "\nphone: " + phoneNum + "\nbirth: " + birth;
+	public void showInfo() {
+		System.out.println("name: " + name + "\nphone: " + phoneNum + "\nbirth: " + birth);
 	}
-
+	
 }
 
 public class Main02 {
@@ -39,15 +39,31 @@ public class Main02 {
 		System.out.println("2.프로그램 종료");
 		System.out.println("----------------");
 
-		int a = scan.nextInt();
+		
+
 		boolean x = true;
+		int a = scan.nextInt();
 		while (x) {
+			scan.nextLine();// 불필요한 엔터 제거.
+			
 			if (a == 1) {
-				PhoneNumber p1 = new PhoneNumber("홍길동", "111-2222", "99년 4월 17일생");
-				System.out.println("선택:" + a);
-				System.out.println(p1.showInfo());
-				a = scan.nextInt();
+				System.out.print("이름을 입력하세요 : ");
+				String pName = scan.nextLine();
+				System.out.print("전화번호를 입력하세요 :");
+				String pNum = scan.nextLine();
+				System.out.print("생일을 입력하세요 : ");
+				String pBirth = scan.nextLine();
 				
+				PhoneNumber p1;
+				if (pBirth.equals("")) {
+					p1 = new PhoneNumber(pName, pNum);
+				} else {
+					p1 = new PhoneNumber(pName, pNum, pBirth);
+				}
+				System.out.println("선택:" + a);
+				p1.showInfo();
+				a = scan.nextInt();
+
 			} else if (a == 2) {
 				System.out.println("선택:" + a);
 				System.out.println("전화번호부가 종료되었습니다.");
@@ -58,10 +74,4 @@ public class Main02 {
 			}
 		}
 	}
-
-	private static Object x(boolean b) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 }
