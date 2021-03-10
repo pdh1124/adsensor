@@ -5,10 +5,10 @@ public class PhoneInfo {
 	private String phoneNumber;
 	private String birth;
 
-	public PhoneInfo(String name2, String phoneNumber2, String birthday) {
+	public PhoneInfo(String name, String phoneNumber, String birthday) {
 		// TODO Auto-generated constructor stub
-		this.name = name2;
-		this.phoneNumber = phoneNumber2;
+		this.name = name;
+		this.phoneNumber = phoneNumber;
 		this.birth = birthday;
 	}
 	// 생성자 역할 : 객체를 초기화. 클래스를 통해서 동일한 형식의 객체 생성.

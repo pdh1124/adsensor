@@ -11,27 +11,27 @@ public class PhoneBookManager {
 	void readData() {// 입력처리 메소드
 		PhoneBook.sc.nextLine();// 눈에 보이지 않는 엔터 제거용.
 		// sc 가 static 객체 이므로, 클래스명으로 접근 가능.
-//		System.out.print("이름:");
-//		String name = PhoneBook.sc.nextLine();
-//		System.out.print("전화번호:");
-//		String phoneNumber = PhoneBook.sc.nextLine();
-//		System.out.print("생년월일:");
-//		String birthday = PhoneBook.sc.nextLine();
-//
-//		PhoneInfo pi = new PhoneInfo(name, phoneNumber, birthday);
-//		// 전달값 3개를 처리하는 생성자가 없으므로 에러,
-//		// 해당 에러 위에 커서를 두면, 
-//		// 선택1) 지워라.
-//		// 선택2) 해당 생성자를 만들어라.
-//		phoneList[cnt]=pi;// 생성된 연락처 객체를 객체 배열에 저장.
-//		cnt++;
+		System.out.print("이름:");
+		String name = PhoneBook.sc.nextLine();
+		System.out.print("전화번호:");
+		String phoneNumber = PhoneBook.sc.nextLine();
+		System.out.print("생년월일:");
+		String birthday = PhoneBook.sc.nextLine();
 
-		phoneList[0] = new PhoneInfo("1", "", "");
-		phoneList[1] = new PhoneInfo("2", "", "");
-		phoneList[2] = new PhoneInfo("3", "", "");
-		phoneList[3] = new PhoneInfo("4", "", "");
-		phoneList[4] = new PhoneInfo("5", "", "");
-		cnt = 5;
+		PhoneInfo pi = new PhoneInfo(name, phoneNumber, birthday);
+		// 전달값 3개를 처리하는 생성자가 없으므로 에러,
+		// 해당 에러 위에 커서를 두면, 
+		// 선택1) 지워라.
+		// 선택2) 해당 생성자를 만들어라.
+		phoneList[cnt]=pi;// 생성된 연락처 객체를 객체 배열에 저장.
+		cnt++;
+
+//		phoneList[0] = new PhoneInfo("1", "", "");
+//		phoneList[1] = new PhoneInfo("2", "", "");
+//		phoneList[2] = new PhoneInfo("3", "", "");
+//		phoneList[3] = new PhoneInfo("4", "", "");
+//		phoneList[4] = new PhoneInfo("5", "", "");
+//		cnt = 5;
 
 		System.out.println("데이터 입력이 완료되었습니다.\n");
 		// \n은 줄바꿈
