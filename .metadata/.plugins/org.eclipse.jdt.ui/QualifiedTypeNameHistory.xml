@@ -3,4 +3,7 @@
     <fullyQualifiedTypeName name="b.Test3"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="phonelist.PhoneInfo"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="casting.Sport"/>
+    <fullyQualifiedTypeName name="casting.FourSeason"/>
 </qualifiedTypeNameHistroy>
