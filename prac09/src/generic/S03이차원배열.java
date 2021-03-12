@@ -16,7 +16,9 @@ public class S03이차원배열 { //이차원 배열
 			}
 		}
 		int n = score.length; // 배열의 행 개수, 4
+		System.out.println(score.length);
 		int m = score[0].length; // 배열의 열 개수, 2
+		System.out.println(score[0].length);
 		System.out.println("4년 전체 평점 평균은 " + sum / (n * m));
 	}
 }

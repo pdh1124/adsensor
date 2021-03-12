@@ -2,6 +2,15 @@ package generic;
 
 import java.util.HashSet;
 
+//- 발전된 배열의 느낌.
+//- 크기가 고정되지 않고, 객체를 추가하면 늘어났다가
+//- 객체를 제거하면 자동으로 줄어든다.
+//- 객체 추가시에는 add()
+//- 객체 제거시에는 remove()
+//- 저장된 객체 개수는 size()
+//- 저장된 객체를 표시할때는 iterator를 이용하여 처리.
+//- iterator에 받은 값은 1회성.
+
 class Animal {
 	String species;
 	String habitat;
@@ -20,8 +29,7 @@ class Animal {
 	
 	
 	//객체의 동등 비교시 사용
-	
-	public boolean equals(Object obj) {
+		public boolean equals(Object obj) {
 
 		if (obj instanceof Animal) {
 			Animal temp = (Animal) obj;
@@ -44,7 +52,7 @@ public class S02HashSet {
 		
 		Animal a = new Animal("고양이", "육지");
 		
-		hs.add(a);
+		hs.add(a); //생성
 		hs.add(new Animal("고양이2", "육지3"));
 		hs.add(new Animal("고양이3", "육지2"));
 		hs.remove(a); //삭제
