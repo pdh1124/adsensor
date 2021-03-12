@@ -10,7 +10,6 @@ package generic;
 //스트림 : 데이터의 흐름, 
 //예) 동영상 스트리밍 서비스 (다운로드 되지 않고, 연결동안만 구동 - 넷플릭스, 웨이브)
 
-
 import java.io.FileReader; // Reader, Writer 는 문자 처리.
 import java.io.IOException;// Input-Output 예외 처리. 운영체제 자원 빌려 사용
 

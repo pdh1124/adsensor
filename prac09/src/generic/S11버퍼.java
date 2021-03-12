@@ -18,7 +18,7 @@ public class S11버퍼 {
 
 		try {
 			fin = new FileReader("c:\\Tmp\\일일일.txt");// 12345678
-			BufferedOutputStream out = new BufferedOutputStream(System.out, 16);
+			BufferedOutputStream out = new BufferedOutputStream(System.out, 10);
 			// 버퍼는 채워지면 출력하고 빈상태로 대기.
 			// 출력변수, 글자(버퍼) 크기
 			while ((c = fin.read()) != -1) {
