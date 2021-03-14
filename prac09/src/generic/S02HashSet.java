@@ -1,6 +1,7 @@
 package generic;
 
 import java.util.HashSet;
+import java.util.Iterator;
 
 //- 발전된 배열의 느낌.
 //- 크기가 고정되지 않고, 객체를 추가하면 늘어났다가
@@ -41,8 +42,14 @@ class Animal {
 		}
 
 	}
+		
+	void showAnimal() {
+		System.out.println(species +" "+ habitat);
+	}
+	
 
 }
+
 
 public class S02HashSet {
 
@@ -55,10 +62,19 @@ public class S02HashSet {
 		hs.add(a); //생성
 		hs.add(new Animal("고양이2", "육지3"));
 		hs.add(new Animal("고양이3", "육지2"));
+		hs.add(new Animal("고양이4", "육지4"));
+		hs.add(new Animal("고양이4", "육지4"));
 		hs.remove(a); //삭제
 
 		System.out.println(hs.size());
-
+		
+		Iterator<Animal> itr = hs.iterator();
+		
+		while (itr.hasNext()) {
+			Animal p = itr.next();
+			p.showAnimal();
+		}
+		
 	}
 
 }
