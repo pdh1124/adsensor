@@ -47,7 +47,7 @@ public class PhoneBookManager {
 	void readFromFile() {
 		ObjectInputStream objInputStream = null;
 		FileInputStream inputStream = null;
-		
+
 		File dir = new File("c:/temp/");
 		if (!dir.isDirectory()) {
 			dir.mkdir();
@@ -161,7 +161,6 @@ public class PhoneBookManager {
 
 		}
 
-
 		System.out.println();
 
 	}
@@ -214,10 +213,8 @@ public class PhoneBookManager {
 
 	}
 
-
-
 	void allList() {
-	
+
 		Iterator<PhoneInfo> itr = phoneList.iterator();
 
 		while (itr.hasNext()) {

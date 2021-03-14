@@ -60,20 +60,26 @@ public class S02HashSet {
 		Animal a = new Animal("고양이", "육지");
 		
 		hs.add(a); //생성
-		hs.add(new Animal("고양이2", "육지3"));
-		hs.add(new Animal("고양이3", "육지2"));
+		hs.add(new Animal("고양이2", "육지2"));
+		hs.add(new Animal("고양이3", "육지3"));
 		hs.add(new Animal("고양이4", "육지4"));
 		hs.add(new Animal("고양이4", "육지4"));
 		hs.remove(a); //삭제
 
 		System.out.println(hs.size());
 		
-		Iterator<Animal> itr = hs.iterator();
-		
-		while (itr.hasNext()) {
-			Animal p = itr.next();
-			p.showAnimal();
+		for(Animal str : hs) {
+			//System.out.println(str.showAnimal()); 실행불가
+			System.out.print(str.species + " ");
+			System.out.println(str.habitat);
 		}
+		
+//		Iterator<Animal> itr = hs.iterator();
+//		
+//		while (itr.hasNext()) {
+//			Animal p = itr.next();
+//			p.showAnimal();
+//		}
 		
 	}
 

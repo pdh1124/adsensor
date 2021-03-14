@@ -16,7 +16,7 @@ import java.io.IOException;// Input-Output 예외 처리. 운영체제 자원 �
 public class S09파일입출력 {
 	public static void main(String[] args) {
 		FileReader fin = null; // = FileReader fin; 선언만 함
-		System.out.println("hi5");
+		
 		try {
 			fin = new FileReader("c:\\windows\\system.ini");
 			// fin = new FileReader("c:/windows/system.ini");//결과 동일.
