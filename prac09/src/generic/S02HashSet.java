@@ -15,11 +15,15 @@ import java.util.Iterator;
 class Animal {
 	String species;
 	String habitat;
+	int mari;
+	int su;
 
 	// 생성자 멤버필드를 초기화 ()
-	Animal(String species, String habitat) {
+	Animal(String species, String habitat,int mari,int su) {
 		this.species = species;
 		this.habitat = habitat;
+		this.mari = mari;
+		this.su = su;
 	}
 	
 	//객체의 동등 비교시 사용
@@ -34,7 +38,7 @@ class Animal {
 
 		if (obj instanceof Animal) {
 			Animal temp = (Animal) obj;
-			return species.equals(temp.species) && habitat.equals(temp.habitat);
+			return species.equals(temp.species) || habitat.equals(temp.habitat);
 		}
 		
 		else {
@@ -57,23 +61,30 @@ public class S02HashSet {
 
 		HashSet<Animal> hs = new HashSet<Animal>();
 		
-		Animal a = new Animal("고양이", "육지");
+		Animal a = new Animal("고양이", "육지", 1, 1);
 		
 		hs.add(a); //생성
-		hs.add(new Animal("고양이2", "육지2"));
-		hs.add(new Animal("고양이3", "육지3"));
-		hs.add(new Animal("고양이4", "육지4"));
-		hs.add(new Animal("고양이4", "육지4"));
+		hs.add(new Animal("고양이2", "육지2", 2, 2));
+		hs.add(new Animal("고양이2", "육지2", 3, 2));
+		hs.add(new Animal("고양이2", "육지1", 3, 2));
+		hs.add(new Animal("고양이3", "육지3", 3, 3));
+		hs.add(new Animal("고양이4", "육지4", 4, 4));
+		hs.add(new Animal("고양이4", "육지4", 4, 5));
+		hs.add(new Animal("고양이4", "육지5", 4, 4));
 		hs.remove(a); //삭제
 
 		System.out.println(hs.size());
 		
+		//출력 첫번째 방법
 		for(Animal str : hs) {
 			//System.out.println(str.showAnimal()); 실행불가
 			System.out.print(str.species + " ");
-			System.out.println(str.habitat);
+			System.out.print(str.habitat + " ");
+			System.out.print(str.mari + " ");
+			System.out.println(str.su + " ");
 		}
-		
+
+		//출력 두번째 방법		
 //		Iterator<Animal> itr = hs.iterator();
 //		
 //		while (itr.hasNext()) {

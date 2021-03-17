@@ -11,7 +11,7 @@ public class PhoneBook {
 
 		while (true) {
 			Menu.showMenu();
-			System.out.print("이름: ");
+			System.out.print("선택 : ");
 			int choice = scan.nextInt();
 
 			switch (choice) {

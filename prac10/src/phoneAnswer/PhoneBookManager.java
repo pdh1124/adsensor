@@ -6,6 +6,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.HashSet;
@@ -21,7 +22,8 @@ public class PhoneBookManager {
 			// hashSet 객체에서 요소에 접근하기 위한 iterator(반복자) 변수를 초기화.
 			ObjectOutputStream objOut = null;// 출력 처리를 위한 변수지정.
 			FileOutputStream fileOut = null;// 출력 처리를 위한 변수지정.
-
+			
+			
 			try {
 				fileOut = new FileOutputStream(path);
 				objOut = new ObjectOutputStream(fileOut);
@@ -47,7 +49,6 @@ public class PhoneBookManager {
 	void readFromFile() {
 		ObjectInputStream objInputStream = null;
 		FileInputStream inputStream = null;
-
 		File dir = new File("c:/temp/");
 		if (!dir.isDirectory()) {
 			dir.mkdir();
@@ -56,7 +57,9 @@ public class PhoneBookManager {
 		File file1 = new File(path);
 		if (!file1.isFile()) {
 			try {
+
 				file1.createNewFile();
+				
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
@@ -66,6 +69,7 @@ public class PhoneBookManager {
 			inputStream = new FileInputStream(path);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
+			
 		}
 		try {
 			if (inputStream.available() != -1) {
@@ -78,6 +82,7 @@ public class PhoneBookManager {
 				while (inputStream.available() > 0) {
 					// eof : end of file
 					try {
+						
 						phoneList.add((PhoneInfo) objInputStream.readObject());
 					} catch (ClassNotFoundException e) {
 						e.printStackTrace();
@@ -86,10 +91,10 @@ public class PhoneBookManager {
 				objInputStream.close();
 
 			} else {
-				System.out.println("�� ���Ϸ� ���� ������ �����ϴ�.");
+				System.out.println("저장된 파일이 존재하지 않습니다.");
 			}
 		} catch (EOFException e) {
-			System.out.println("�� ���Ϸ� ���� ������ �����ϴ�.");
+			System.out.println("저장된 파일이 존재하지 않습니다.");
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
@@ -116,40 +121,40 @@ public class PhoneBookManager {
 
 	void readData() {
 		String sName, sPhoneNum;
-		System.out.print("������ �Է��� �����մϴ�.");
-		System.out.println("1.�Ϲ�, 2.����, 3.ȸ��");
-		System.out.print("���� : ");
+		System.out.print("전화번호부를 선택하여 주세요.");
+		System.out.println("1.기본, 2.대학, 3.회사");
+		System.out.print("선택 : ");
 		int choice = PhoneBook.scan.nextInt();
 
-		System.out.print("�̸� : ");
+		System.out.print("이름 : ");
 		sName = PhoneBook.scan.next();
-		System.out.print("��ȭ��ȣ : ");
+		System.out.print("전화번호 : ");
 		sPhoneNum = PhoneBook.scan.next();
 
 		switch (choice) {
 		case 1:
 			PhoneInfo pi = new PhoneInfo(sName, sPhoneNum);
 			phoneList.add(pi);
-			System.out.print("������ �Է��� �Ϸ�Ǿ����ϴ�.");
+			System.out.print("전화번호가 저장되었습니다.");
 			break;
 		case 2:
-			System.out.print("���� : ");
+			System.out.print("전공 : ");
 			String major = PhoneBook.scan.next();
-			System.out.print("�г� : ");
+			System.out.print("학년 : ");
 			int year = PhoneBook.scan.nextInt();
 			PhoneInfo pui = new PhoneUnivInfo(sName, sPhoneNum, major, year);
 
 			phoneList.add(pui);
-			System.out.print("������ �Է��� �Ϸ�Ǿ����ϴ�.");
+			System.out.print("전화번호가 저장되었습니다.");
 			break;
 		case 3:
 
-			System.out.print("ȸ�� : ");
+			System.out.print("부서 : ");
 			String company = PhoneBook.scan.next();
 			PhoneInfo pci = new PhoneCompanyInfo(sName, sPhoneNum, company);
 
 			phoneList.add(pci);
-			System.out.print("������ �Է��� �Ϸ�Ǿ����ϴ�.");
+			System.out.print("전화번호가 저장되었습니다.");
 			break;
 		default:
 			try {
@@ -189,27 +194,27 @@ public class PhoneBookManager {
 	}
 
 	void searchData() {
-		System.out.println("������ �˻��� �����մϴ�.");
-		System.out.print("�̸� : ");
+		System.out.println("찾고싶은 이름을 검색하세요.");
+		System.out.print("이름 : ");
 		String sName = PhoneBook.scan.next();
 		boolean has = searchIndex(sName, "search");
 		if (!has) {
-			System.out.println("ã�� ���� �������� �ʽ��ϴ�.");
+			System.out.println("찾으시는 이름이 없습니다.");
 		}
 
 	}
 
 	void deleteData() {
-		System.out.println("������ ������ �����մϴ�..");
-		System.out.print("�̸� : ");
+		System.out.println("삭제하고 싶은 이름을 검색하세요.");
+		System.out.print("이름 : ");
 		String sName = PhoneBook.scan.next();
 		boolean has = searchIndex(sName, "del");
 
 		if (!has) {
-			System.out.println("ã�� ���� �������� �ʽ��ϴ�.");
+			System.out.println("찾으시는 이름이 없습니다.");
 		}
 
-		System.out.println("���� ��ϵ� ����ó : " + phoneList.size() + "\n");
+		System.out.println("현재 전화번호부 갯수 : " + phoneList.size() + "\n");
 
 	}
 

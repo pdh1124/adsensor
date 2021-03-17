@@ -11,7 +11,7 @@ public class MyExcep extends Exception {
 
 	@Override
 	public String getMessage() {
-		return i + " ���� ����.";
+		return i + "번의 선택사항은 존재하지 않습니다.";
 	}
 
 }
